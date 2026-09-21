@@ -1,0 +1,15 @@
+node_modules/
+target/
+dist/
+.local/
+data/
+*.log
+*.tmp
+*.bak
+reference/
+verification/
+AGENTS.md
+public/assets/
+public/audio/
+public/fonts/
+public/icons/

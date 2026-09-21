@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible problem without uploading private documents.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not upload private or confidential PPT/PDF files, tokens, logs, or local profiles."
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+    validations:
+      required: true
+  - type: input
+    id: scaling
+    attributes:
+      label: Display scaling
+    validations:
+      required: true
+  - type: input
+    id: source_type
+    attributes:
+      label: PPTX/PDF source type
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted screenshot or recording
+      description: "Do not attach confidential or private document content."

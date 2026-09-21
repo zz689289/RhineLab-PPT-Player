@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a future capability or interaction improvement.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: "Check docs/KNOWN_ISSUES_zh-CN.txt first; do not attach private PPT/PDF files."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and use case
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional redacted screenshot or recording

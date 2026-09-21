@@ -1,0 +1,12 @@
+{
+ "$schema":"https://schema.tauri.app/config/2",
+ "productName":"Archive Player",
+ "version":"0.1.0",
+ "identifier":"local.archive-player.m1",
+ "build":{"frontendDist":"../dist"},
+ "app":{
+   "windows":[],
+   "security":{"csp":"default-src 'self'; script-src 'self'; worker-src 'self' blob:; img-src 'self' blob: data:; style-src 'self' 'unsafe-inline'; connect-src 'self' ipc: http://ipc.localhost; object-src 'none'; base-uri 'none'"}
+ },
+ "bundle":{"active":false,"icon":["icons/icon.ico"]}
+}

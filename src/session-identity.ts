@@ -1,0 +1,8 @@
+import {invoke,isTauri} from '@tauri-apps/api/core';
+export const PV_IDENTITY='JOYCE MOORE';
+export type IdentityMode='pv'|'windows'|'custom';
+let saved:any={};try{saved=(JSON.parse(localStorage.getItem('rhine-session-identity')??'{}')??{});}catch{}
+export function validIdentity(value:string):string|null{if(/[\r\n<>\u0000-\u001f\u007f]/u.test(value))return null;const s=[...value.trim()].slice(0,32).join('');return s||null;}
+export const sessionIdentity:{mode:IdentityMode;custom:string;name:string;status:string}={mode:['pv','windows','custom'].includes(saved.mode)?saved.mode:'pv',custom:typeof saved.custom==='string'?(validIdentity(saved.custom)??PV_IDENTITY):PV_IDENTITY,name:PV_IDENTITY,status:''};
+export async function resolveIdentity(){sessionIdentity.status='';if(sessionIdentity.mode==='windows'){if(!isTauri()){sessionIdentity.name='BROWSER TEST USER';sessionIdentity.status='浏览器测试占位，未读取Windows账号';}else try{const n=validIdentity(await invoke<string>('windows_username'));if(!n)throw Error();sessionIdentity.name=n;}catch{sessionIdentity.name=PV_IDENTITY;sessionIdentity.status='无法读取系统用户名';}}else sessionIdentity.name=sessionIdentity.mode==='custom'?sessionIdentity.custom:PV_IDENTITY;return sessionIdentity.name;}
+export async function setIdentity(mode:IdentityMode,custom?:string){if(mode==='custom'){const valid=validIdentity(custom??sessionIdentity.custom);if(!valid)return false;sessionIdentity.custom=valid;}sessionIdentity.mode=mode;await resolveIdentity();try{localStorage.setItem('rhine-session-identity',JSON.stringify({mode:sessionIdentity.mode,custom:sessionIdentity.custom}));}catch{}return true;}
