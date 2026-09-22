@@ -43,6 +43,6 @@
   "tag_created": true,
   "github_release_created": true,
   "release_verified_online": true,
-  "main_commit": "57a428bf056a7e5554930ee67aa2e704cd488954",
+  "release_state_commit": "c19c6c3a2cd57ec49ef3cd2685334d577f079a56",
   "tag_commit": "d840841f43b1f68d48a52d8c30bc5bca443770ac"
 }
