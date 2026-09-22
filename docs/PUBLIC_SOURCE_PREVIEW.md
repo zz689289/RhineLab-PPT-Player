@@ -1,7 +1,7 @@
-# Public Source Preview scope
+# Public source scope
 
-This repository is intentionally incomplete. It contains a whitelist-selected source and documentation preview only.
+The public repository contains a whitelist-selected source and documentation snapshot for RhineLab PPT Player v1.0.0. Windows binaries and standalone demo attachments are distributed through the GitHub Release, not committed to this source repository.
 
-The frozen local candidate remains separate. The preview excludes runtime assets whose redistribution status is not closed: GLB/Blend models, PV-derived audio/PCM, exact logo/icon vectors, font kits, screenshots/GIFs, internal verification material, and the Windows executable.
+The complete post-v1.0 design issue list is preserved in [`KNOWN_ISSUES_zh-CN.txt`](KNOWN_ISSUES_zh-CN.txt), which remains the source of truth for the full wording and priorities. Short README summaries do not mark any item resolved.
 
-Do not describe this repository as complete buildable source or as the formal v1.0 open-source release. The formal release will be reconsidered after rights evidence is available.
+The project license, RhineLabUI upstream notice, and third-party IP boundaries are documented separately in the root `LICENSE`, `LICENSE_STATUS.md`, and `THIRD_PARTY_NOTICES.md`.
