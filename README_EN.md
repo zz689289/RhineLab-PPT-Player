@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README_EN.md)
 
-> **v1.0.0 released / 首个公开发行版**
+> **v1.0.0 release assets prepared / 发布包已准备**
 
 RhineLab PPT Player is an unofficial fan-made PPT/PDF preview and presentation player inspired by archive-terminal aesthetics.
 
@@ -12,7 +12,7 @@ RhineLab PPT Player is an unofficial fan-made PPT/PDF preview and presentation p
 - Windows x64 package: `RhineLab-PPT-Player-v1.0.0-Windows-x64.zip`
 - Functional demo: `RhineLab-PPT-Player-Demo-v1.0.0.pptx` and the matching PDF attachment
 
-The PPTX tests the PowerPoint conversion path. The PDF can be loaded directly without PowerPoint. The demo covers 4:3 Chinese pages, Preview, Presentation, page switching, and first/last-page boundaries.
+The PPTX tests the PowerPoint conversion path. The PDF can be loaded directly without PowerPoint. The demo covers 4:3 Chinese pages, Preview, Presentation, page switching, and first/last-page boundaries. The GitHub Release page is the intended download location.
 
 ## What it does
 

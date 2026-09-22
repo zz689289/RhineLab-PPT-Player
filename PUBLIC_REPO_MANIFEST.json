@@ -3,7 +3,7 @@
   "repository": "https://github.com/zz689289/RhineLab-PPT-Player",
   "visibility": "public",
   "default_branch": "main",
-  "status": "PUBLIC_RELEASE_V1_0_0",
+  "status": "PUBLIC_RELEASE_TAGGED_RELEASE_PENDING",
   "release": "v1.0.0",
   "frozen_candidate": "PLAYER-PRESENTATION-001-R1-C002-RELEASE-SAFE",
   "frozen_exe_sha256": "ff587509e9db1c846a456561393f692220455ca2d1253c7d8d8c6b388d8f11ae",
@@ -34,8 +34,10 @@
   ],
   "known_issues_source": "docs/KNOWN_ISSUES_zh-CN.txt",
   "known_issues_source_of_truth": true,
-  "released": true,
+  "released": false,
   "tag_created": true,
-  "github_release_created": true,
-  "release_verified_online": true
+  "github_release_created": false,
+  "release_verified_online": false,
+  "main_commit": "d840841f43b1f68d48a52d8c30bc5bca443770ac",
+  "tag_commit": "d840841f43b1f68d48a52d8c30bc5bca443770ac"
 }
