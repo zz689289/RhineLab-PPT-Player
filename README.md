@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README_EN.md)
 
-> **v1.0.0 发布包已准备 / Release assets prepared**
+> **v1.0.0 已发布 / First Public Release**
 
 这是一个受到 RhineLab 风格档案终端启发的 PPT/PDF 预览与放映播放器。
 
@@ -10,10 +10,10 @@
 
 ## 下载与演示
 
-正式公开版本页面：<https://github.com/zz689289/RhineLab-PPT-Player/releases/tag/v1.0.0>
+正式公开版本：<https://github.com/zz689289/RhineLab-PPT-Player/releases/tag/v1.0.0>
 
-- Windows x64：Release 创建后下载 `RhineLab-PPT-Player-v1.0.0-Windows-x64.zip`
-- Functional Demo：Release 创建后提供 PPTX 与 PDF，可直接测试导入、页面边界、Preview、Presentation 和连续切页
+- Windows x64：在 v1.0.0 Release 中下载 `RhineLab-PPT-Player-v1.0.0-Windows-x64.zip`
+- Functional Demo：同一 Release 已提供 PPTX 与 PDF，可直接测试导入、页面边界、Preview、Presentation 和连续切页
 - 源码：本仓库提供经过白名单审阅的公开源码与文档快照，不包含 Windows EXE 或用户私人文件
 
 ## 主要功能
